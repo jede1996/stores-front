@@ -31,7 +31,6 @@ export default function App () {
       Swal.fire({ icon: 'error', title: 'Error de login', text: 'Credenciales incorrectas'});
     }
   };
-
   const toggleModo = () => setModoOscuro(!modoOscuro);
 
   return (
