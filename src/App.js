@@ -19,7 +19,7 @@ export default function App () {
         contrasenna,
         aplicacion: 'LunaVet' // Este campo se envía pero no se muestra
       });
-      if(response.status == 200){
+      if(response.status === 200){
         Swal.fire({ icon: 'success', title: 'Login exitoso', text: 'Bienvenido!' });
         localStorage.setItem("sesion", response.data.respuesta.token)
       }else{
